@@ -1,0 +1,238 @@
+/* Universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Simple selectors */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+nav {
+    background-color: #555;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    display: inline-block;
+}
+nav a:hover {
+    background-color: #333;
+}
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+section h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+section h3 {
+    color: #555;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+p {
+    margin-bottom: 10px;
+}
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+ul {
+    margin-left: 20px;
+}
+li {
+    margin-bottom: 8px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+footer a {
+    color: #0066cc;
+}
+/* ID selectors*/
+#name {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+#email {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+#message {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+}
+/* Class selectors */
+.float-left {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.float-left img {
+    max-width: 20px;
+    border: 2px solid #333;
+}
+.float-right {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.float-right img {
+    max-width: 60px;
+    height: auto;
+    border: 2px solid #333;
+}
+.clear {
+    clear: both;
+}
+.service-card {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-left: 5px solid #667eea;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.service-title {
+    color: #667eea;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.service-description {
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+.service-list {
+    list-style: none;
+    padding-left: 0;
+}
+.service-list li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 0.95em;
+}
+.service-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.project-card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.project-card:hover {
+    border-color: #667eea;
+    box-shadow: 0 6px 15px rgba(102, 126, 234, 0.2);
+}
+.project-title {
+    color: #667eea;
+    font-size: 1.5em;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+.project-description {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+}
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+button:hover {
+    background-color: #555e 0.95em;
+    }
+nav a {
+    padding: 8px 12px;
+    margin: 3px;
+}
+main {
+        padding: 0 10px;
+    }   
+.float-left,.float-right {
+        float: none;
+        margin-right: 0;
+        margin-left: 0;
+    }
+.float-left img,.float-right img {
+        max-width: 100%}
